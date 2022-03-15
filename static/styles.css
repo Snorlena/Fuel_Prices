@@ -1,0 +1,55 @@
+@charset "UTF-8";
+
+.centertable {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+}
+
+.center {
+    text-align: center;
+}
+
+.center_green {
+    text-align: center;
+    background-color: green;
+    color: white;
+}
+
+.center_black {
+    text-align: center;
+    background-color: black;
+    color: white;
+}
+
+.center_blue {
+    text-align: center;
+    background-color: blue;
+    color: white;
+}
+
+table {
+    font-size: 20px;
+    border: 2px solid black;
+    border-spacing: 0px;
+    white-space: nowrap;
+    border-radius: 5px;
+}
+
+td {
+    font-size: 14px;
+    border: solid 0px black;
+    border-spacing: 0px;
+    padding-left: 8px;
+    padding-right: 8px;
+}
+
+
+
+thead {
+    font-size: 16px;
+    font-weight: bold;
+    border: solid 0px black;
+    border-spacing: 0px;
+}
