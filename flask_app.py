@@ -11,7 +11,6 @@ def index():
         'https://www.st1.se/fuel/stationPrices/pricesPerStation/'
     )
 
-    stations = {}
     data = response.text
 
     parsed = json.loads(data)["data"]["station_prices"]
