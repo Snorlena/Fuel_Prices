@@ -23,6 +23,6 @@ def index():
         stations[parsed[keys]["name"]] = newName,[parsed[keys]["prices"]["b95"]["price_with_tax"],parsed[keys]["prices"]["diesel"]["price_with_tax"],parsed[keys]["prices"]["e85"]["price_with_tax"]]
 
     return render_template('index.html', stations=stations, updated_at=updated_at)
-    
+
 if __name__ == '__main__':
-    app.run(host='0.0.0.0', port=3000)
+    app.run(debug=True, host="0.0.0.0", port=int(os.environ.get("PORT", 8080)))
